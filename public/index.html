@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinGecko API Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>CoinGecko API Clone</h1>
+
+<div class="controls">
+
+    <input type="text" id="search" placeholder="Search by Name or Symbol">
+
+    <button onclick="searchCoin()">Search</button>
+
+    <button onclick="loadCoins()">View All Coins</button>
+
+</div>
+
+<div class="form">
+
+    <h2>Add Coin</h2>
+
+    <input type="text" id="name" placeholder="Coin Name">
+
+    <input type="text" id="symbol" placeholder="Symbol">
+
+    <input type="number" id="price" placeholder="Price">
+
+    <input type="number" id="marketCap" placeholder="Market Cap">
+
+    <input type="number" id="volume" placeholder="Volume">
+
+    <input type="text" id="category" placeholder="Category">
+
+    <button onclick="addCoin()">Add Coin</button>
+
+</div>
+<div class="pagination">
+
+<button onclick="prevPage()">
+
+Previous
+
+</button>
+
+<span id="pageNo">
+
+1
+
+</span>
+
+<button onclick="nextPage()">
+
+Next
+
+</button>
+
+</div>
+<div id="coins"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
