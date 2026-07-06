@@ -15,6 +15,7 @@ app.use(express.json());
 const path = require("path");
 
 app.use(express.static(path.join(__dirname, "public")));
+app.use("/api/auth",require("./routes/authRoutes"));
 
 app.use("/api/coins",require("./routes/coinRoutes"));
 app.use("/api/markets",require("./routes/marketRoutes"));
